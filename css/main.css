@@ -334,7 +334,8 @@ a {
 .gallery__container img {
   cursor: -webkit-zoom-in;
   cursor: zoom-in;
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .composition {
