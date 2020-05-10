@@ -1,0 +1,29 @@
+/********************HEADER SECTION***************/
+@media screen and (max-width: 1150px) {
+    .header__info {
+        width: 80%;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 900px) {
+    .header__info {
+        display: none;
+    }
+    .header__container {
+        justify-content: center;
+    }
+    .header__logo {
+        margin-left: 0;
+    }
+    .header__caption {
+        text-align: center;
+        width: 90%;
+        margin: 60px auto 0;
+    }
+    .header__caption .heading {
+        font-size: 2rem;
+        width: 100%;
+    }
+    .header__caption .descr {
+        width: 100%;
+    }
+}

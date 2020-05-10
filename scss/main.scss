@@ -1,0 +1,329 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+	font-family: 'Circe ExtraLight';
+	src: url('../fonts/circe_extralight.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/circe_extralight.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/circe_extralight.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/circe_extralight.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/circe_extralight.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/circe_extralight.svg#circe_extralight') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+	font-family: 'Circe Light';
+	src: url('../fonts/circe_light.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/circe_light.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/circe_light.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/circe_light.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/circe_light.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/circe_light.svg#circe_light') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+	font-family: 'Circe';
+	src: url('../fonts/circe.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/circe.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/circe.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/circe.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/circe.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/circe.svg#circe') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+	font-family: 'Circe Bold';
+	src: url('../fonts/circe_bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/circe_bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/circe_bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/circe_bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/circe_bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/circe_bold.svg#circe_bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+	font-family: 'Circe ExtraBold';
+	src: url('../fonts/circe_extrabold.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/circe_extrabold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/circe_extrabold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/circe_extrabold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/circe_extrabold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/circe_extrabold.svg#circe_extrabold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.header {
+    padding-bottom: 30px;
+    background: url('../images/header-bg.webp') no-repeat center center / cover;
+    height: auto;
+    .wrapper {
+        position: relative;
+        overflow-x: hidden;
+    }
+    li {
+        list-style: none;
+    }
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        background-color: #1a1a1a;
+        left: 100vw;
+        width: 30%;
+        height: 100vh;
+        transition: 0.8s;
+        z-index: 999;
+        transform: translateX(0%);
+    }
+    .menu-active {
+        transform: translateX(-100%);
+    }
+    .menu-list {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 90%;
+        flex-direction: column;
+        text-transform: uppercase;
+        color: #000;
+        .caption {
+            font-family: 'Circe Bold', sans-serif;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 30%;
+        }
+        .icons {
+            height: 150px;
+            justify-content: space-around;
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        .fab {
+            margin-right: 0;
+        }
+    }
+    .menu-list li {
+        font-family: 'Circe Bold', sans-serif;
+        color: #fff;
+    }
+    .menu-btn {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 10px;
+        right: 31vw;
+        background-color: #fab82e;
+        border-radius: 50%;
+    }
+    .menu-btn span,
+    .menu-btn span::before,
+    .menu-btn span::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -1px;
+        margin-left: -10px;
+        width: 20px;
+        height: 2px;
+        background-color: #222;
+    }
+    .menu-btn span::before {
+        transform: translateY(-5px);
+      }
+    .menu-btn span::after {
+        transform: translateY(5px);
+      }
+    .menu-btn span::before,
+    .menu-btn span::after {
+        content: '';
+        display: block;
+        transition: 0.2s;
+    }
+    .menu-btn_active span {
+        height: 0;
+    }
+    .menu-btn_active span::before {
+        transform: rotate(45deg);
+    }
+    .menu-btn_active span::after {
+        transform: rotate(-45deg);
+    }
+    &__logo {
+        margin-left: 80px;
+    }
+    &__container {
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo {
+        width: 68px;
+        height: auto;
+    }
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 60%;
+    }
+    &__links {
+        display: flex;
+        li {
+            color: #fff;
+            font-family: 'Circe Bold', sans-serif;
+            margin-right: 20px;
+            font-size: 1.125rem;
+        }
+    }
+    .fab {
+        background-color: #fab82e;
+        padding: 10px;
+        border-radius: 50%;
+        color: #000;
+        margin-right: 20px;
+    }
+    .fa-instagram {
+        font-weight: bold;
+    }
+    &__btn {
+        background-color: #fff;
+        text-align: center;
+        width: 200px;
+        border-radius: 25px;
+        cursor: pointer;
+        font-family: 'Circe Bold';
+        padding: 15px;
+        border: none;
+    }
+    &__caption {
+        margin: 60px 0 0 80px;
+        .heading {
+            font-family: 'Circe ExtraBold', sans-serif;
+            width: 60%;
+            font-size: 4rem;
+            color: #fff;
+        }
+        .descr {
+            font-family: 'Circe Light', sans-serif;
+            color: #fff;
+            font-size: 1.25rem;
+            width: 50%;
+            line-height: 1.7;
+            opacity: 0.8;
+        }
+        .caption-btn {
+            text-align: center;
+            padding: 20px;
+            width: 250px;
+            font-size: 1.125rem;
+            margin-top: 40px;
+            cursor: pointer;
+            border-radius: 25px;
+            font-family: 'Circe Bold', sans-serif;
+            border: none;
+            background-color: #fab82e;
+        }
+    }
+}
+.brand {
+    padding-bottom: 40px;
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 80%;
+        margin: 80px auto;
+    }
+    &__motto {
+        margin-top: 10px;
+    }
+    .heading {
+        font-family: 'Circe ExtraBold', sans-serif;
+        font-size: 3.875rem;
+    }
+    .motto {
+        font-family: 'Circe Bold', sans-serif;
+        color: rgb(250, 184, 46);
+        font-size: 1.25rem;
+        margin-top: 24px;
+    }
+    &__description {
+        width: 43%;
+        .par {
+            color: rgb(77, 77, 77);
+            line-height: 1.7;
+            font-size: 1.25rem;
+            font-family: 'Circe Light', sans-serif;
+        }
+        .second-par {
+            margin-top: 30px;
+        }
+    }
+}
+.gallery {
+    &__container {
+        height: auto;
+        margin-top: 50px;
+        width: 95%;
+        margin: 0 auto;
+        display: grid;
+        grid-template: repeat(2, auto) / repeat(4, auto);
+        grid-gap: 20px;
+        img {
+            cursor: zoom-in;
+            max-width: 100%;
+        }
+    }
+}
+.composition {
+    padding-bottom: 40px;
+    &__heading {
+        margin: 40px 0 0 80px;
+    }
+    .heading {
+        font-family: 'Circe ExtraBold', sans-serif;
+        font-size: 3.875rem;
+    }
+    &__container {
+        display: flex;
+        width: 100%;
+        margin: 40px auto;
+        justify-content: space-between;
+    }
+    .left-par {
+        margin-left: 80px;
+    }
+    .right-par {
+        margin-right: 180px;
+    }
+    .left-par, .right-par {
+        font-family: 'Circe Light', sans-serif;
+        font-size: 1.3125rem;
+        width: 35%;
+        color: rgb(77, 77, 77);
+        line-height: 1.7;
+    }
+    &__btn {
+        text-align: center;
+        padding: 15px;
+        width: 250px;
+        font-size: 1.125rem;
+        margin: 20px 0 0 80px;
+        cursor: pointer;
+        border-radius: 25px;
+        font-family: 'Circe Bold', sans-serif;
+        border: none;
+        background-color: #fab82e;
+    }
+}

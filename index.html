@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUZ T | Стрит-фуд на основе казахской кухни</title>
+    <script src="https://kit.fontawesome.com/3ed3c66bc7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="menu">
+                <a href="#" class="menu-btn">
+                    <span></span>
+                </a>
+                <nav class="menu-list">
+                    <div class="links">
+                        <a href="#"><li>О нас</li></a>
+                        <a href="#"><li>Состав продукта</li></a>
+                        <a href="#"><li>Клиенты</li></a>
+                        <a href="#"><li>Франшиза</li></a>
+                    </div>
+                    <div class="caption-container">
+                        <li class="caption">Следите за нами в соцсетях</li>
+                        <div class="icons">
+                            <a href="#"><i class="icon fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="icon fab fa-youtube"></i></a>
+                            <a href="#"><i class="icon fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="header__container">
+            <div class="header__logo">
+                <img class='logo' src="./images/auzt-logo.png" alt="logo">
+            </div>
+            <div class="header__info">
+                <ul class="header__links">
+                    <a href="#"><li>О нас</li></a>
+                    <a href="#"><li>Состав продукта</li></a>
+                    <a href="#"><li>Клиенты</li></a>
+                </ul>
+                <div class="header__icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="header__button">
+                    <button class="header__btn">Хочу франшизу</button>
+                </div>
+            </div>
+        </div>
+        <div class="header__caption">
+            <h1 class="heading">Первый стрит-фуд на основе казахской кухни</h1>
+            <p class='descr'>Нежнейшее томлёное мясо, политое сыром, заправленное фирменным соусом в воздушной свежей 
+                булочке — и никакой голод не страшен!</p>
+            <button class="caption-btn">Узнать подробнее</button>
+        </div>
+    </header>
+<!--     <section class="brand">
+        <div class="brand__container">
+            <div class="brand__motto">
+                <h2 class='heading'>Наш продукт</h2>
+                <p class='motto'>Почувствуй вкус гордости вместе с нами!</p>
+            </div>
+            <div class="brand__description">
+                <p class="par first-par"><strong>Компания «AUZ T»</strong> представляет уникальный проект по формату "ЕТ ПЕН НАН" разработанный ведущими 
+                    казахстанскими специалистами в области кулинарии и здорового питания.</p>
+                <p class="par second-par">Компания представляет ведущих отечественных производителей мяса и хлеба, где гарантирует 
+                    стандарты качества.</p>
+            </div>
+        </div>
+    </section>
+    <section class="gallery">
+        <div class="gallery__container">
+            <div class="first"><img src="./images/1.webp" alt=""></div>
+            <div class="second"><img src="./images/2.webp" alt=""></div>
+            <div class="third"><img src="./images/3.webp" alt=""></div>
+            <div class="fourth"><img src="./images/4.webp" alt=""></div>
+            <div class="fifth"><img src="./images/5.webp" alt=""></div>
+            <div class="sixth"><img src="./images/6.webp" alt=""></div>
+            <div class="seventh"><img src="./images/7.webp" alt=""></div>
+            <div class="eighth"><img src="./images/8.webp" alt=""></div>
+        </div>
+    </section>
+    <section class="composition">
+        <div class="composition__heading">
+            <h1 class="heading">Состав продукта</h1>
+        </div>
+        <div class="composition__container">
+            <div class="par left-par">
+                <p>Технология приготовления основана на томлении мяса 12-ти часов в собственном соку без добавления
+                     консервантов и других ингредиентов, что положительно влияет на качество и вкус продукта.
+                </p>
+            </div>
+            <div class="par right-par">
+                <p>Способ приготовления мяса, по древней казахской технологии, был адаптирован и запущен на широкую 
+                    аудиторию и является форматом быстрого приготовления. Продукт состоит из 180 грамм томлённого 
+                    мяса и 120 грамм отечественного хлеба.
+                </p>
+            </div>
+        </div>
+        <button class="composition__btn">Хочу франшизу!</button>
+    </section> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(".menu-btn").on('click', function(e){
+    e.preventDefault();
+    $('.menu').toggleClass('menu-active');
+    $(this).toggleClass('menu-btn_active');
+})
+    </script>
+</body>
+</html>
