@@ -54,9 +54,13 @@ li {
 a {
     text-decoration: none;
 }
+$CirceLight: 'Circe Light', sans-serif;
+$CirceReg: 'Circe', sans-serif;
+$CirceBold: 'Circe Bold', sans-serif;
+$CirceExtraBold: 'Circe ExtraBold', sans-serif;
 .header {
     padding-bottom: 30px;
-    background: url('../images/header-bg.webp') no-repeat center center / cover;
+    background: url('../images/header-bg.png') no-repeat center center / cover;
     height: auto;
     .wrapper {
         position: relative;
@@ -325,6 +329,221 @@ a {
         border-radius: 25px;
         font-family: 'Circe Bold', sans-serif;
         border: none;
+        background-color: #fab82e;
+    }
+}
+.clients {
+    padding-bottom: 40px;
+    background: url('../images/header-bg.png') no-repeat center center / cover;
+    &__heading {
+        padding-top: 40px;
+        margin-left: 80px;
+        color: #fff;
+    }
+    .heading {
+        font-family: 'Circe ExtraBold', sans-serif;
+        font-size: 3.875rem;
+    }
+    .descr {
+        font-family: 'Circe Light', sans-serif;
+        line-height: 1.7;
+        margin-top: 10px;
+        width: 45%;
+        font-size: 1.25rem;
+        opacity: 0.8;
+    }
+    &__grid {
+        display: grid;
+        width: 90%;
+        margin: 80px 0 0 80px;
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+        grid-gap: 20px;
+        h2 {
+            color: #fab82e;
+            font-size: 1.625rem;
+            font-family: 'Circe ExtraBold';
+        }
+        p {
+            font-family: 'Circe Light', sans-serif;
+            opacity: 0.8;
+            margin-top: 10px;
+            color: #fff;
+            line-height: 1.7;
+            font-size: 1.125rem;
+            width: 90%;
+        }
+    }
+}
+.features {
+    padding-bottom: 40px;
+    &__heading {
+        text-align: center;
+        padding-top: 40px;
+        font-family: $CirceExtraBold;
+    }
+    .heading {
+        font-size: 3.875rem;
+    }
+    &__list {
+        display: grid;
+        grid-gap: 20px;
+        width: 60%;
+        margin: 0 auto;
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+        .feature {
+            display: flex;
+            align-items: center;
+        }
+    }
+    .circle {
+        width: 68px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 68px;
+        background-color: #fab82e;
+        padding: 15px;
+        font-family: $CirceBold;
+        font-size: 1.5rem;
+        border-radius: 50%;
+    }
+    .feature-name {
+        margin-left: 10px;
+        font-family: $CirceBold;
+        font-size: 1.5rem;
+    }
+}
+.franchise {
+    padding-bottom: 40px;
+    background: url('../images/header-bg.png') no-repeat center center / cover;
+    &__logo {
+        padding: 30px 0 0 80px;
+    }
+    .logo {
+        width: 68px;
+        height: auto;
+    }
+    &__caption {
+        margin: 40px 0 0 80px;
+    }
+    .heading {
+        font-family: 'Circe ExtraBold', sans-serif;
+        font-size: 3.875rem;
+        color: #fab82e;
+        margin: 0;
+    }
+    .subheading {
+        font-family: 'Circe Light', sans-serif;
+        font-size: 1.25rem;
+        color: #fff;
+        opacity: 0.8;
+        margin-top: 20px;
+    }
+    &__points {
+        width: 80%;
+        margin: 60px 0 0 80px;
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+        grid-gap: 40px;
+    }
+    .far {
+        color: #fab82e;
+        font-size: 2rem;
+    }
+    .point {
+        display: flex;
+        align-items: center;
+        &-cap {
+            margin-left: 20px;
+            color: #fff;
+            font-family: 'Circe Light', sans-serif;
+            font-size: 1.25rem;
+        }
+    }
+    &__price {
+        color: #fff;
+        margin: 80px 0 0 80px;
+    }
+    .price-heading {
+        font-size: 3.25rem;
+        font-family: $CirceExtraBold;
+    }
+    .price {
+        color: #fab82e
+    }
+    .terms-subheading {
+        font-family: $CirceLight;
+        opacity: 0.8;
+        font-size: 1.25rem;
+    }
+    &__form {
+        width: 80%;
+        margin: 40px 0 0 80px;
+        display: flex;
+        justify-content: space-between;
+        input {
+            color: #fff;
+            font-family: $CirceLight;
+            outline: none;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid #fff;
+            &:-webkit-input-placeholder {
+                padding-bottom: 10px;
+                color: #fff;
+                font-family: $CirceLight;
+            }
+        }
+    }
+    &__btn {
+        background-color: #fab82e;
+        text-align: center;
+        width: 200px;
+        font-family: $CirceBold;
+        padding: 15px;
+        cursor: pointer;
+        border-radius: 25px;
+        border: none;
+        outline: none;
+    }
+    .warning {
+        margin: 20px 0 0 80px;
+        font-family: $CirceLight;
+        color: #fff;
+        opacity: 0.6;
+        font-size: 0.8125rem;
+        &-link {
+            color: rgb(255, 255, 255);
+            border-bottom: 1px solid rgb(250, 184, 46);
+        }
+    }
+}
+.map {
+    background-color: #171717;
+}
+.footer {
+    padding-bottom: 30px;
+    background-color: #171717;
+    &__container {
+        padding-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .logo {
+        max-width: 150px;
+    }
+    .policy-link {
+        font-size: 1.125rem;
+        font-family: $CirceBold;
+        color: #fff;
+        border-bottom: 1px solid #fab82e;
+    }
+    .fab {
+        margin-right: 10px;
+        padding: 15px;
+        color: #000;
+        border-radius: 50%;
         background-color: #fab82e;
     }
 }

@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AUZ T | Стрит-фуд на основе казахской кухни</title>
     <script src="https://kit.fontawesome.com/3ed3c66bc7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="intlTelInput.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-    <header class="header">
+   <header class="header">
         <div class="wrapper">
             <div class="menu">
                 <a href="#" class="menu-btn">
@@ -19,16 +20,16 @@
                 <nav class="menu-list">
                     <div class="links">
                         <a href="#"><li>О нас</li></a>
-                        <a href="#"><li>Состав продукта</li></a>
-                        <a href="#"><li>Клиенты</li></a>
-                        <a href="#"><li>Франшиза</li></a>
+                        <a href="#composition"><li>Состав продукта</li></a>
+                        <a href="#clients"><li>Клиенты</li></a>
+                        <a href="#franchise"><li>Франшиза</li></a>
                     </div>
                     <div class="caption-container">
                         <li class="caption">Следите за нами в соцсетях</li>
                         <div class="icons">
-                            <a href="#"><i class="icon fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="icon fab fa-youtube"></i></a>
-                            <a href="#"><i class="icon fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/auzt.kz/"><i class="icon fab fa-facebook-f"></i></a>
+                            <a href="https://www.youtube.com/channel/UC9Zm9qypwl60E6udBSpB0lw"><i class="icon fab fa-youtube"></i></a>
+                            <a href="https://www.instagram.com/auzt_kz/"><i class="icon fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </nav>
@@ -41,13 +42,14 @@
             <div class="header__info">
                 <ul class="header__links">
                     <a href="#"><li>О нас</li></a>
-                    <a href="#"><li>Состав продукта</li></a>
-                    <a href="#"><li>Клиенты</li></a>
+                    <a href="#composition"><li>Состав продукта</li></a>
+                    <a href="#clients"><li>Клиенты</li></a>
+                    <a href="#franchise"><li>Франшиза</li></a>
                 </ul>
                 <div class="header__icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/auzt.kz/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/channel/UC9Zm9qypwl60E6udBSpB0lw"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/auzt_kz/"><i class="fab fa-instagram"></i></a>
                 </div>
                 <div class="header__button">
                     <button class="header__btn">Хочу франшизу</button>
@@ -127,7 +129,7 @@
             </div>
         </div>
     </section>
-    <section class="composition">
+    <section class="composition" id='composition'>
         <div class="composition__heading">
             <h1 class="heading">Состав продукта</h1>
         </div>
@@ -146,7 +148,125 @@
         </div>
         <button class="composition__btn">Хочу франшизу!</button>
     </section>
+    <section class="clients" id='clients'>
+        <div class="clients__heading">
+            <h1 class="heading">Кто наши клиенты?</h1>
+            <p class="descr">Несмотря на то, что наш продукт для массового потребления, мы выделяем для себя три 
+                основные аудитории</p>
+        </div>
+        <div class="clients__grid">
+            <div class="students">
+                <h2>Учащиеся вузов</h2>
+                <p>Молодые люди, ведущие активный образ жизни, основные потребители "Fast Food" индустрии.</p>
+            </div>
+            <div class="businessmen">
+                <h2>Офисные работники</h2>
+                <p>Сотрудники бизнес-центров, менеджеры среднего класса во время обеденного перерыва зачастую 
+                    отдают свой выбор в пользу "быстрого" и качественного продукта.</p>
+            </div>
+            <div class="fans">
+                <h2>Болельщики</h2>
+                <p>Люди, активно посещающие спортивные мероприятия, во время которых часто употребляют продукт 
+                    нашего формата.</p>
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <div class="features__heading">
+            <h1 class="heading">Что мы предлагаем клиентам</h1>
+        </div>
+        <div class="features__list">
+            <div class="feature first">
+                <div><span class="circle">1</span></div><p class='feature-name'>Быстрое обслуживание</p>
+            </div>
+            <div class="feature third">
+                <div><span class="circle">2</span></div><p class='feature-name'>Натуральные продукты</p>
+            </div>
+            <div class="feature second">
+                <div><span class="circle">3</span></div><p class='feature-name'>Уникальная технология</p>
+            </div>
+
+            <div class="feature fourth">
+                <div><span class="circle">4</span></div><p class='feature-name'>Низкая стоимость</p>
+            </div>
+        </div>
+    </section>
+    <section class="franchise" id='franchise'>
+        <div class="franchise__logo">
+            <img class="logo" src="./images/auzt-logo.png" alt="">
+        </div>
+        <div class="franchise__caption">
+            <h1 class="heading">Франшиза</h1>
+            <p class="subheading">Узнайте, что входит в приобретение франшизы</p>
+        </div>
+        <div class="franchise__points">
+            <div class="point">
+                <i class="far fa-check-circle"></i><p class="point-cap">Оборудование точки продаж «под ключ»</p>
+            </div>
+            <div class="point">
+                <i class="far fa-check-circle"></i><p class="point-cap">Набор и обучение персонала</p>
+            </div>
+            <div class="point">
+                <i class="far fa-check-circle"></i><p class="point-cap">Техническое и юридическое сопровождение</p>
+            </div>
+            <div class="point">
+                <i class="far fa-check-circle"></i><p class="point-cap">Обеспечение продуктом</p>
+            </div>
+        </div>
+        <div class="franchise__price">
+            <h1 class="price-heading">Стоимость франшизы <span class='price'>от 6 млн тенге</span></h1>
+            <p class="terms-subheading">Для граждан Республики Казахстан открывающих франшизу за рубежом льготные 
+                условия</p>
+        </div>
+        <div class="franchise__form">
+            <input type="text" placeholder="Ваше имя" autocomplete="on">
+            <input type="text" placeholder="Ваш e-mail" autocomplete="on">
+            <input type="tel" id="phone">
+            <button type='submit' class="franchise__btn">Отправить заявку</button>
+        </div>
+        <p class="warning">Нажимая на кнопку, я соглашаюсь с <a class='warning-link' href="#">политикой обработки 
+            персональных данных</a></p>
+    </section>
+    <section class="map">
+
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__logo">
+                <a href="#"><img class='logo' src="./images/footer-logo.png" alt="AUZT LOGO"></a>
+            </div>
+            <div class="footer__policy">
+                <a class="policy-link" href="#">Политика конфиденциальности</a>
+            </div>
+            <div class="footer__icons">
+                <a href="https://www.facebook.com/auzt.kz/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.youtube.com/channel/UC9Zm9qypwl60E6udBSpB0lw"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/auzt_kz/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
+    <script> //скрипт для шаблона заполнения номера
+        $(function($){
+   $('input[type="tel"]').mask("+7 (999) 999-99-99");
+});
+$.fn.setCursorPosition = function(pos) {
+  if ($(this).get(0).setSelectionRange) {
+    $(this).get(0).setSelectionRange(pos, pos);
+  } else if ($(this).get(0).createTextRange) {
+    var range = $(this).get(0).createTextRange();
+    range.collapse(true);
+    range.moveEnd('character', pos);
+    range.moveStart('character', pos);
+    range.select();
+  }
+};
+$("#phone").click(function(){
+  $(this).setCursorPosition(3);
+}).mask("+7(999) 999-9999");
+$("#phone").mask("+7(999) 999-9999");
+    </script>
     <script>
         $(".menu-btn").on('click', function(e){
     e.preventDefault();
