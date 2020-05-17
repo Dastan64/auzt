@@ -605,7 +605,7 @@ a {
   font-size: 0.8125rem;
 }
 .franchise .warning-link {
-  color: white;
+  cursor: pointer;
   border-bottom: 1px solid #fab82e;
 }
 .franchise .dark-layer {

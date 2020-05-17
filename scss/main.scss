@@ -531,7 +531,7 @@ $CirceExtraBold: 'Circe ExtraBold', sans-serif;
         opacity: 0.6;
         font-size: 0.8125rem;
         &-link {
-            color: rgb(255, 255, 255);
+            cursor: pointer;
             border-bottom: 1px solid rgb(250, 184, 46);
         }
     }
