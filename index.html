@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,10 +20,10 @@
                 </a>
                 <nav class="menu-list">
                     <div class="links">
-                        <a href="#about-us"><li>О нас</li></a>
-                        <a href="#composition"><li>Состав продукта</li></a>
-                        <a href="#clients"><li>Клиенты</li></a>
-                        <a href="#franchise"><li>Франшиза</li></a>
+                        <li><a href="#about-us">О нас</a></li>
+                        <li><a href="#composition">Состав продукта</a></li>
+                        <li><a href="#clients">Клиенты</a></li>
+                        <li><a href="#franchise">Франшиза</a></li>
                     </div>
                     <div class="caption-container">
                         <li class="caption">Следите за нами в соцсетях</li>
@@ -82,49 +82,49 @@
         <div class="gallery__container">
             <div class="first">
                 <picture>
-                    <source srcset="./images/1.webp" alt="" type="image/webp">
+                    <source srcset="./images/1.webp" type="image/webp">
                     <img src="./images/1.png" alt="">
                 </picture>
             </div>
             <div class="second">
                 <picture>
-                    <source srcset="./images/2.webp" alt="" type="image/webp">
+                    <source srcset="./images/2.webp" type="image/webp">
                     <img src="./images/2.png" alt="">
                 </picture>
             </div>
             <div class="third">
                 <picture>
-                    <source srcset="./images/3.webp" alt="" type="image/webp">
+                    <source srcset="./images/3.webp" type="image/webp">
                     <img src="./images/3.png" alt="">
                 </picture>
             </div>
             <div class="fourth">
                 <picture>
-                    <source srcset="./images/4.webp" alt="" type="image/webp">
+                    <source srcset="./images/4.webp" type="image/webp">
                     <img src="./images/4.png" alt="">
                 </picture>
             </div>
             <div class="fifth">
                 <picture>
-                    <source srcset="./images/5.webp" alt="" type="image/webp">
+                    <source srcset="./images/5.webp" type="image/webp">
                     <img src="./images/5.png" alt="">
                 </picture>
             </div>
             <div class="sixth">
                 <picture>
-                    <source srcset="./images/6.webp" alt="" type="image/webp">
+                    <source srcset="./images/6.webp" type="image/webp">
                     <img src="./images/6.png" alt="">
                 </picture>
             </div>
             <div class="seventh">
                 <picture>
-                    <source srcset="./images/7.webp" alt="" type="image/webp">
+                    <source srcset="./images/7.webp" type="image/webp">
                     <img src="./images/7.png" alt="">
                 </picture>
             </div>
             <div class="eighth">
                 <picture>
-                    <source srcset="./images/8.webp" alt="" type="image/webp">
+                    <source srcset="./images/8.webp" type="image/webp">
                     <img src="./images/8.png" alt="">
                 </picture>
             </div>
@@ -430,70 +430,6 @@
         <span class='up-caption'>Наверх</span>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-        let menu = document.querySelector('.menu');
-        let menuActive = document.querySelector('.menu-active');
-        let link = document.querySelector('.warning-link');
-        let footerLink = document.querySelector('.policy-link');
-        let popup = document.querySelector('.dark-layer');
-        let close = document.querySelector('.close-icon');
-        let burgerBtn = document.querySelector('.menu-btn');
-        let upContainer = document.getElementById('up');
-
-        burgerBtn.addEventListener('click', function(e) { // кнопка-бургер
-            e.preventDefault();
-            menu.classList.toggle('menu-active');
-            this.classList.toggle('menu-btn_active');
-        })
-
-        $(document).mouseup(function (e) { //закрытие меню при нажатии куда-то, кроме меню
-            if ($(e.target).closest(".menu-active").length === 0) { 
-                $(".menu").removeClass('menu-active');
-                $('.menu-btn').removeClass('menu-btn_active');
-            } 
-        });
-
-        function showAndHide() { //скрытие кнопок при скролле от верхней части страницы на 600 пикселей
-            let YOffset = window.pageYOffset;
-            if (YOffset > 600 || burgerBtn.classList.contains('menu-btn_active')) {
-                burgerBtn.style.display = 'block';
-                upContainer.style.display = 'block';
-            }
-            else {
-                burgerBtn.style.display = 'none';
-                upContainer.style.display = 'none';
-            }
-        }
-        window.addEventListener('scroll', showAndHide);
-
-        function showPopUpWindow(e) { //pop-up окно о политике обработки персональных данных (с анимацией)
-            e.preventDefault();
-            popup.style.display = 'block';
-            popup.style.setProperty('--animate-duration', '.6s');
-            popup.classList.add('animate__animated', 'animate__fadeInUp');
-        }
-        link.addEventListener('click', showPopUpWindow);
-        footerLink.addEventListener('click', showPopUpWindow);
-
-        close.addEventListener('click', ()=> popup.style.display = 'none'); //закрытие pop-up окна при нажатии на крестик
-        
-        let anchors = Array.prototype.slice.call(document.querySelectorAll('a[href^= "#"')); //плавный скролл к якорям
-        for (let i = 0; i < anchors.length; i++) {            
-            anchors[i].addEventListener('click', function smoothScroll(event) {
-                event.preventDefault();
-                const blockID = anchors[i].getAttribute('href');
-                document.querySelector(blockID).scrollIntoView({
-                    behavior: "smooth",
-                    block: "start"
-                })
-            })
-        }
-        
-        window.onclick = function(event) { //скрытие pop-up окна при нажатии не только на крестик, но и на затемнённую область
-            if (event.target == popup) {
-                popup.style.display = 'none';
-            }
-        }
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>

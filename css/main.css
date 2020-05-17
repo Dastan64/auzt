@@ -132,7 +132,10 @@ a {
   margin-right: 0;
 }
 .header .menu-list li {
+  color: #fff;
   font-family: 'Circe Bold', sans-serif;
+}
+.header .menu-list a {
   color: #fff;
 }
 .header .menu-btn {
