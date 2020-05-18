@@ -6,6 +6,7 @@
 }
 
 @font-face {
+  font-display: swap;
   font-family: 'Circe ExtraLight';
   src: url("../fonts/circe_extralight.eot");
   /* IE 9 Compatibility Mode */
@@ -13,6 +14,7 @@
   /* Chrome < 4, Legacy iOS */
 }
 @font-face {
+  font-display: swap;
   font-family: 'Circe Light';
   src: url("../fonts/circe_light.eot");
   /* IE 9 Compatibility Mode */
@@ -20,6 +22,7 @@
   /* Chrome < 4, Legacy iOS */
 }
 @font-face {
+  font-display: swap;
   font-family: 'Circe';
   src: url("../fonts/circe.eot");
   /* IE 9 Compatibility Mode */
@@ -27,6 +30,7 @@
   /* Chrome < 4, Legacy iOS */
 }
 @font-face {
+  font-display: swap;
   font-family: 'Circe Bold';
   src: url("../fonts/circe_bold.eot");
   /* IE 9 Compatibility Mode */
@@ -34,6 +38,7 @@
   /* Chrome < 4, Legacy iOS */
 }
 @font-face {
+  font-display: swap;
   font-family: 'Circe ExtraBold';
   src: url("../fonts/circe_extrabold.eot");
   /* IE 9 Compatibility Mode */
