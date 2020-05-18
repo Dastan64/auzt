@@ -6,6 +6,7 @@ let popup = document.querySelector('.dark-layer');
 let close = document.querySelector('.close-icon');
 let burgerBtn = document.querySelector('.menu-btn');
 let upContainer = document.getElementById('up');
+let phoneInput = document.getElementById('phone');
 
 burgerBtn.addEventListener('click', function(e) { // кнопка-бургер
     e.preventDefault();
@@ -61,3 +62,9 @@ window.onclick = function(event) { //скрытие pop-up окна при на�
         popup.style.display = 'none';
     }
 }
+
+window.intlTelInput(phoneInput, {
+    utilsScript: "js/utils.js",
+    separateDialCode: true,
+    preferredCountries: ['kz','ru', 'ua', 'by']
+  });

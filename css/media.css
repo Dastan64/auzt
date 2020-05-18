@@ -4,7 +4,7 @@
         width: 80%;
     }
 }
-@media screen and (min-width: 320px) and (max-width: 900px) {
+@media screen and (min-width: 320px) and (max-width: 980px) {
     .header__info {
         display: none;
     }
@@ -186,6 +186,7 @@
     }
     .franchise__form {
         flex-direction: column;
+        align-items: center;
         width: 90%;
         height: 200px;
         margin: 40px auto 0;

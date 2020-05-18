@@ -55,9 +55,28 @@ $CirceLight: 'Circe Light', sans-serif;
 $CirceReg: 'Circe', sans-serif;
 $CirceBold: 'Circe Bold', sans-serif;
 $CirceExtraBold: 'Circe ExtraBold', sans-serif;
+.iti__flag {background-image: url("../img/flags.png");}
+.iti {
+    display: flex !important;
+}
+.iti__country-list--dropup {
+    font-family: $CirceReg;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {
+      background-image: url("../img/flags@2x.png");
+    }
+}
+.iti--separate-dial-code .iti__selected-dial-code {
+    color: #fff;
+    font-family: $CirceReg;
+}
+.iti--allow-dropdown .iti__flag-container:hover .iti__selected-flag {
+    outline: none;
+}
 .header {
     padding-bottom: 30px;
-    background: url('../images/header-bg.png') no-repeat center center / cover;
+    background: url('../img/header-bg.png') no-repeat center center / cover;
     height: auto;
     .wrapper {
         position: relative;
@@ -352,7 +371,7 @@ $CirceExtraBold: 'Circe ExtraBold', sans-serif;
 }
 .clients {
     padding-bottom: 40px;
-    background: url('../images/header-bg.png') no-repeat center center / cover;
+    background: url('../img/header-bg.png') no-repeat center center / cover;
     &__heading {
         padding-top: 40px;
         margin-left: 80px;
@@ -433,7 +452,7 @@ $CirceExtraBold: 'Circe ExtraBold', sans-serif;
 }
 .franchise {
     padding-bottom: 40px;
-    background: url('../images/header-bg.png') no-repeat center center / cover;
+    background: url('../img/header-bg.png') no-repeat center center / cover;
     &__logo {
         padding: 30px 0 0 80px;
     }

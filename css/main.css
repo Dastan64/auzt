@@ -44,9 +44,37 @@ a {
   text-decoration: none;
 }
 
+.iti__flag {
+  background-image: url("../img/flags.png");
+}
+
+.iti {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.iti__country-list--dropup {
+  font-family: "Circe", sans-serif;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {
+    background-image: url("../img/flags@2x.png");
+  }
+}
+.iti--separate-dial-code .iti__selected-dial-code {
+  color: #fff;
+  font-family: "Circe", sans-serif;
+}
+
+.iti--allow-dropdown .iti__flag-container:hover .iti__selected-flag {
+  outline: none;
+}
+
 .header {
   padding-bottom: 30px;
-  background: url("../images/header-bg.png") no-repeat center center/cover;
+  background: url("../img/header-bg.png") no-repeat center center/cover;
   height: auto;
 }
 .header .wrapper {
@@ -404,7 +432,7 @@ a {
 
 .clients {
   padding-bottom: 40px;
-  background: url("../images/header-bg.png") no-repeat center center/cover;
+  background: url("../img/header-bg.png") no-repeat center center/cover;
 }
 .clients__heading {
   padding-top: 40px;
@@ -497,7 +525,7 @@ a {
 
 .franchise {
   padding-bottom: 40px;
-  background: url("../images/header-bg.png") no-repeat center center/cover;
+  background: url("../img/header-bg.png") no-repeat center center/cover;
 }
 .franchise__logo {
   padding: 30px 0 0 80px;
