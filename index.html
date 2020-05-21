@@ -7,10 +7,12 @@
     <script src="https://kit.fontawesome.com/3ed3c66bc7.js" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="intlTelInput.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-    <link rel="stylesheet" href="css/normalize.css">
+    <!-- <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
-    <link rel="stylesheet" href="css/intlTelInput.min.css">
+    <link rel="stylesheet" href="css/intlTelInput.min.css"> -->
+    <link rel="stylesheet" href="build/css/bundle.css">
 </head>
 <body>
    <header class="header" id='beginning'>
@@ -39,7 +41,7 @@
         </div>
         <div class="header__container">
             <div class="header__logo">
-                <img class='logo' src="./img/auzt-logo.png" alt="logo">
+                <img class='logo' src="build/img/auzt-logo.png" alt="logo">
             </div>
             <div class="header__info">
                 <ul class="header__links">
@@ -82,52 +84,68 @@
     <section class="gallery">
         <div class="gallery__container">
             <div class="first">
-                <picture>
-                    <source srcset="./img/1.webp" type="image/webp">
-                    <img src="./img/1.png" alt="">
-                </picture>
+                <a data-fancybox="gallery__container" href="build/img/slider-1.jpg">
+                    <picture>
+                        <source srcset="build/img/1.webp" type="image/webp">
+                        <img src="build/img/1.png" alt="">
+                    </picture>
+                </a>
             </div>
             <div class="second">
-                <picture>
-                    <source srcset="./img/2.webp" type="image/webp">
-                    <img src="./img/2.png" alt="">
-                </picture>
+                <a data-fancybox="gallery__container" href="build/img/slider-2.jpg">
+                    <picture>
+                        <source srcset="build/img/2.webp" type="image/webp">
+                        <img src="build/img/2.png" alt="">
+                    </picture>
+                </a>
             </div>
             <div class="third">
-                <picture>
-                    <source srcset="./img/3.webp" type="image/webp">
-                    <img src="./img/3.png" alt="">
-                </picture>
+                <a data-fancybox="gallery__container" href="build/img/slider-3.jpg">
+                    <picture>
+                        <source srcset="build/img/3.webp" type="image/webp">
+                        <img src="build/img/3.png" alt="">
+                    </picture>
+                </a>
             </div>
             <div class="fourth">
-                <picture>
-                    <source srcse="img/4.webp" type="image/webp">
-                    <img src="./img/4.png" alt="">
-                </picture>
+                <a data-fancybox="gallery__container" href="build/img/slider-4.jpg">
+                    <picture>
+                        <source srcse="build/img/4.webp" type="image/webp">
+                        <img src="build/img/4.png" alt="">
+                    </picture>
+                </a>
             </div>
             <div class="fifth">
-                <picture>
-                    <source srcset="./img/5.webp" type="image/webp">
-                    <img src="./img/5.png" alt="">
-                </picture>
+                <a data-fancybox="gallery__container" href="build/img/slider-5.jpg">
+                    <picture>
+                        <source srcset="build/img/5.webp" type="image/webp">
+                        <img src="build/img/5.png" alt="">
+                    </picture>
+                </a>
             </div>
             <div class="sixth">
-                <picture>
-                    <source srcset="./img/6.webp" type="image/webp">
-                    <img src="./img/6.png" alt="">
-                </picture>
+                <a data-fancybox="gallery__container" href="build/img/slider-6.jpg">
+                    <picture>
+                        <source srcset="build/img/6.webp" type="image/webp">
+                        <img src="build/img/6.png" alt="">
+                    </picture>
+                </a>
             </div>
             <div class="seventh">
-                <picture>
-                    <source srcset="./img/7.webp" type="image/webp">
-                    <img src="./img/7.png" alt="">
-                </picture>
+                <a data-fancybox="gallery__container" href="build/img/slider-7.jpg">
+                    <picture>
+                        <source srcset="build/img/7.webp" type="image/webp">
+                        <img src="build/img/7.png" alt="">
+                    </picture>
+                </a>
             </div>
             <div class="eighth">
-                <picture>
-                    <source srcset="./img/8.webp" type="image/webp">
-                    <img src="./img/8.png" alt="">
-                </picture>
+                <a data-fancybox="gallery__container" href="build/img/slider-8.jpg">
+                    <picture>
+                        <source srcset="build/img/8.webp" type="image/webp">
+                        <img src="build/img/8.png" alt="">
+                    </picture>
+                </a>
             </div>
         </div>
     </section>
@@ -195,7 +213,7 @@
     </section>
     <section class="franchise" id='franchise'>
         <div class="franchise__logo">
-            <img class="logo" src="./img/auzt-logo.png" alt="">
+            <img class="logo" src="build/img/auzt-logo.png" alt="">
         </div>
         <div class="franchise__caption">
             <h1 class="heading">Франшиза</h1>
@@ -414,7 +432,7 @@
     <footer class="footer">
         <div class="footer__container">
             <div class="footer__logo">
-                <a href="#beginning"><img class='logo' src="./img/footer-logo.png" alt="AUZT LOGO"></a>
+                <a href="#beginning"><img class='logo' src="build/img/footer-logo.png" alt="AUZT LOGO"></a>
             </div>
             <div class="footer__policy">
                 <a class="policy-link">Политика конфиденциальности</a>
@@ -431,8 +449,6 @@
         <span class='up-caption'>Наверх</span>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/intlTelInput.min.js"></script>
-    <script src="js/utils.js"></script>
-    <script src="js/main.js"></script>
+    <script src="build/js/min.js"></script>
 </body>
 </html>
